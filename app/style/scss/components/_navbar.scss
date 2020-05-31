@@ -1,0 +1,20 @@
+.login__register--btn{
+    background-color: $green !important;
+    color: white !important;
+}
+@media(max-width:990px){
+    .login__register--btn{
+        display: none !important;
+    }
+}
+
+
+@media(min-width:990px){
+    .login_register{
+        display: none !important;
+    }
+}
+
+.navbar{
+    background-color: white;
+}

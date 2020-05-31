@@ -1,0 +1,13 @@
+//Base scss files
+// @import './Base/reset.scss';
+@import './variables/variables.scss';
+@import './variables/base_class.scss';
+
+//Components
+@import './components/navbar';
+@import './components/login_modal';
+@import './components/base_section';
+@import './components/tutorial__section';
+@import './components/tenders';
+@import './components/offer';
+@import './components/footer';
