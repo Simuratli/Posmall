@@ -18,3 +18,73 @@
 .navbar{
     background-color: white;
 }
+
+.nav_user{
+    display: flex;
+    position: absolute;
+    right: 30px;
+    a{
+        margin-right: 10px;
+    }
+}
+
+.nav_drop{
+    display: flex;
+   &_item{
+        font-size: 16px;
+        margin-top: 8px;
+        color: black;
+    }
+    &_btn{
+        &:focus{
+            outline: none !important;
+        }
+    }
+    
+  
+}
+
+.btn:focus {
+    box-shadow: none;
+  }
+
+
+.nav_profile{
+    display: flex;
+    &_avatar{
+        width: 50px;
+        height: 50px;
+        object-fit: cover;
+        border-radius: 50%;
+    }
+    &_name{
+        display: block;
+        font-size: 20px;
+        margin-left: 10px;
+        font-weight: bold;
+        &_status{
+            font-size: 15px;
+            font-weight: lighter;
+            position: relative;
+            top: 25px;
+            left: -90px;
+
+        }
+    }
+}
+
+.nav_button{
+    a{
+        width: 200px !important;
+    }
+}
+
+@media(max-width:665px){
+    .nav_user{
+        position: absolute;
+        top: 40px;
+        right: 50%;
+        margin-right: -50%;
+        padding-right: 40px;
+    }
+}
