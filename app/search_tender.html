@@ -48,12 +48,11 @@
         <div class="card p-3">
             <form id="regForm" action="/action_page.php">
                 <h1 class="text-green">Создание тендера</h1>
-
-                <div style="text-align:center;margin-top:40px;">
-                    <span class="step"></span>
-                    <span class="step"></span>
-                    <span class="step"></span>
-                    <span class="step"></span>
+                  <h5 id="error" class="text-danger d-none  font-weight-bold">Error</h5>
+                <div class=" ml-1 mt-3 mb-4 d-flex justify-content-around">
+                    <div><span class="step"><i class="fas fa-cog"></i></span><span class="step_name">Создание тендера</span></div>
+                    <div> <span class="step"><i class="fas fa-dharmachakra"></i></span><span class="step_name"> Доставка и оплата</span></div>
+                    <div><span class="step"><i class="fas fa-credit-card"></i></span><span class="step_name">Подтверждение данных</span></div>
                   </div>
                 <!-- One "tab" for each step in the form: -->
                 <div class="tab">
@@ -61,7 +60,7 @@
                     <div class="row">
                         <div class="col-md-4 mb-3">
                             Категория*:
-                                <select required id="required" oninput="this.className = 'custom-select '" class="custom-select invalid">
+                                <select required  oninput="this.className = 'custom-select '" class="custom-select multistepform invalid">
                                     <option >Category 1</option>
                                     <option >Category 2</option>
                                 </select>
@@ -69,7 +68,7 @@
 
                         <div class="col-md-4 mb-3">
                            Подкатегория*:
-                                <select required id="required" oninput="this.className = 'custom-select'" class="custom-select invalid" >
+                                <select required  oninput="this.className = 'custom-select'" class="custom-select multistepform invalid" >
                                     <option >Подкатегория* 1</option>
                                     <option >Подкатегория* 2</option>
                                 </select>
@@ -84,12 +83,12 @@
 
                         <div class="col-md-4 mb-3">
                             Срок сдачи*
-                            <input required  id="required" class="custom-select invalid"  oninput="this.className = 'custom-select'" name="email">
+                            <input required   class="custom-select multistepform invalid"  oninput="this.className = 'custom-select'" name="email">
                         </div>
 
                         <div class="col-md-4 mb-3">
                             Срок сдачи*
-                                <select id="required" oninput="this.className = 'custom-select'"  class="custom-select invalid">
+                                <select  oninput="this.className = 'custom-select'"  class="custom-select required multistepform invalid">
                                     <option >Срок сдачи* 1</option>
                                     <option >Срок сдачи* 2</option>
                                 </select>
@@ -114,21 +113,69 @@
                     </div>
                 </div>
             </div>
+
+            <div class="tab">
+              <div class="container">
+                  <div class="row">
+                      <div class="col-md-4 mb-3">
+                            Предпочитаемая доставка*
+                              <div class="card p-3">
+                                  <input type="radio" id="baku"  name="radio-group" checked>
+                                  <label  for="baku">Самовывоз</label>
+
+                                  <input type="radio" id="gabala"  name="radio-group" checked>
+                                  <label for="gabala" >Бесплатная доставка </label>
+
+                                  <input type="radio" id="shaki"  name="radio-group" checked>
+                                  <label for="shaki" >Доставка курьером</label>
+
+                                  <input type="radio" id="ujar"  name="radio-group" checked>
+                                  <label for="ujar">Доставка курьером в регионы </label>
+
+                                  <input type="radio" id="moskow" name="radio-group" checked>
+                                  <label for="moskow">Lorem</label>
+                              </div>
+                      </div>
+
+                      <div class="col-md-4 mb-3">
+                        Предпочитаемая доставка*
+                          <div class="card p-3">
+                              <input type="radio" id="Открытый"  name="radio-group" checked>
+                              <label  for="Открытый">Бе Открытый тендер</label>
+
+                              <input type="radio" id="Наличная"  name="radio-group" checked>
+                              <label for="Наличная" >Наличная опла</label>
+
+                              <input type="radio" id="Оплата"  name="radio-group" checked>
+                              <label for="Оплата" >Оплата по договору </label>
+
+                              <input type="radio" id="Оплатакурьеру"  name="radio-group" checked>
+                              <label for="Оплатакурьеру">Оплата курьеру </label>
+
+                              <input type="radio" id="moskow" name="radio-group" checked>
+                              <label for="moskow">Lorem</label>
+                          </div>
+                  </div>
+                  <div class="col-md-4 mb-3">
+                    Предпочитаемая доставка*
+                      <div class="card p-3">
+                          <input type="radio" id="baku2"  name="radio-group" checked>
+                          <label  for="baku2">Открытый тендер</label>
+
+                          <input type="radio" id="gabala2"  name="radio-group" checked>
+                          <label for="gabala2" >Закрытый тендер</label>
+
+                      </div>
+              </div>
+                  </div>
+              </div>
+          </div>
                
-
-                  
-
-
-              
-                <div class="tab">Birthday:
-                  <p><input placeholder="dd" oninput="this.className = ''" name="dd"></p>
-                  <p><input placeholder="mm" oninput="this.className = ''" name="nn"></p>
-                  <p><input placeholder="yyyy" oninput="this.className = ''" name="yyyy"></p>
-                </div>
                 <div class="tab">Login Info:
                   <p><input placeholder="Username..." oninput="this.className = ''" name="uname"></p>
                   <p><input placeholder="Password..." oninput="this.className = ''" name="pword" type="password"></p>
                 </div>
+
                 <div style="overflow:auto;">
                   <div style="float:right;">
                     <button class="btn btn-lg green" type="button" id="prevBtn" onclick="nextPrev(-1)">Previous</button>
