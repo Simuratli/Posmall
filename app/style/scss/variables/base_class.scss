@@ -134,3 +134,9 @@ input[type="color"]:focus,
 .card{
     border:1px solid $green !important;
 }
+
+
+.nav-link.active{
+    background-color: $green !important;
+}
+
