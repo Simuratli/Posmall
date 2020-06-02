@@ -2,7 +2,6 @@
     width: 100%;
     height: 100vh;
     position: relative;
-    z-index: -123;
     &__wallpaper{
         width: 100%;
         height: 100vh;
@@ -12,7 +11,7 @@
             height: 100%;
             object-fit: cover;
             position: relative;
-            z-index: -12;
+            z-index: -1;
         }
     }
     &__search{
@@ -20,8 +19,16 @@
         top: 50%;
         left: 50%;
         transform: translate(-50%,-50%);
-        z-index: 123;
+        z-index: 123 !important;
         width: 100%;
+        input{
+            width: 500px;
+            height: 50px;
+            border-radius: 0 !important;
+        }
+        button{
+            height: 50px;
+        }
         form{
             display: flex;
             justify-content: center;
@@ -43,4 +50,22 @@
     border-top-left-radius: 0;
     border-bottom-left-radius: 0;
     border-left-width: 0;
+}
+
+
+@media(max-width:600px){
+    .base__section{
+        &__search{
+            
+            input{
+                width: 200px;
+                height: 50px;
+                border-radius: 0 !important;
+            }
+            button{
+                height: 50px;
+            }
+           
+        }
+    }
 }
