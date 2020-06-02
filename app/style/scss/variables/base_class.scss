@@ -125,3 +125,12 @@ input[type="color"]:focus,
     width: 91%;
     margin: 0 auto;
 }
+
+.short_container{
+    width: 50%;
+    margin: 0 auto;
+}
+
+.card{
+    border:1px solid $green !important;
+}
