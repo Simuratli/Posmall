@@ -1,0 +1,413 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="libs/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style/css/main.css">
+    <title>Posmall</title>
+</head>
+<body>
+
+    <nav class="navbar shadow-sm sticky-top navbar-expand-lg  navbar-light ">
+        <div class="collapse navbar-collapse w-100 order-1 order-lg-0" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Contractors</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Tenders</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Help</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link login_register" data-toggle="modal" data-target="#loginModal">Regiser/Login</a>
+                </li>
+            </ul>
+        </div>
+        <div class="d-flex w-100 order-0">
+            <div class="w-100">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
+            <a class="navbar-brand text-center w-100" href="#">Posmall</a>
+            <span class="w-100"></span>
+        </div>
+        <span class="w-75 p-3"></span>
+        <div class="btn  nav_user">
+          
+            <div class="dropdown nav_drop">
+                <a class="nav_drop_item" href="#"><i class="fas fa-bullhorn"></i></a>
+                <a  class="nav_drop_item" href="#"><i class="fas fa-shopping-cart"></i></a>
+                <a href="messenger.html" class="nav_drop_item" href="#"><i class="fas fa-inbox"></i></a>
+                <a class="nav_drop_item" href="#">400$</a>
+                <button class="btn  nav_drop_btn dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                 John Doe
+                </button>
+                
+                <div class="dropdown-menu nav_drop_menu " aria-labelledby="dropdownMenuButton">
+                  
+                    <a class="dropdown-item nav_profile" href="#">
+                        <img class ='nav_profile_avatar' src="https://www.dvdtalk.com/reviews/images/reviews/76/full/1514314448_2.jpg">
+                        <p class="nav_profile_name">
+                            John Doe
+                            <p class="nav_profile_name_status text-muted">Accountant</p>
+                        </p>
+                    </a>
+                    <div class="d-flex dropdown-item justify-content-between">
+                        <a class="btn w-50 btn-danger" href="#">Accout</a>
+                        <a  class="btn w-50  green" href="#">Accout</a>
+                    </div>
+                    <a class="dropdown-item" href="#">Магазин</a>
+                    <a class="dropdown-item" href="#">Мои тендеры</a>   
+                    <a class="dropdown-item" href="#">Запущенные тендеры</a>   
+                    <a class="dropdown-item" href="#">Обсуждаемые тендеры</a>  
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="#">Logout</a> 
+                </div>
+              </div>
+        </div>
+    </nav>
+
+
+    <div class="container-fluid pp_thumb mb-2">
+        <img class="profile_thumb" src="https://wallpaperaccess.com/full/33505.jpg" alt="">
+    </div>
+
+    <div class="my-coontainer">
+        <div class="row">
+            <div class="col-md-3 ">
+               <div class="profile__image">
+                    <img class="profile__image_img" src="https://upload.wikimedia.org/wikipedia/commons/6/65/Hayao_Miyazaki_cropped_3_Hayao_Miyazaki_201211.jpg" alt="">
+               </div>
+               <div class="profile_info">
+                    <h3>Hayao Miyazaki</h3>
+                    <div class="profile_icons">
+                        <p><i class="fas fa-map-marker-alt"></i> Japan</p>
+                        <p><i class="fas fa-cut"></i> 12 hour ago</p>
+                        <p><div class="online_icon"></div> Online</p>
+                        <p><i class="fas fa-eye-slash"></i> Blocked user</p>
+                        <p></p>
+                    </div>
+                    <div class="row">
+                        <div  class="col-xs-3 ml-2">
+                            <img class="simvols" src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSSPAALQAap5Lt9yNbUq0XtLPvOmBr0JW5dTLvb36PThiZIRhED&usqp=CAU" alt="">
+                        </div>
+                        <div class="col-xs-3 ml-2">
+                            <img class="simvols" src="https://i.pinimg.com/originals/c2/64/03/c26403ed8e378fd8192ea970a87f8830.jpg" alt="">
+                        </div>
+                        <div class="col-xs-3 ml-2">
+                            <img class="simvols" src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSSPAALQAap5Lt9yNbUq0XtLPvOmBr0JW5dTLvb36PThiZIRhED&usqp=CAU" alt="">
+                        </div>
+                        <div class="col-xs-3 ml-2">
+                            <img class="simvols" src="https://i.ytimg.com/vi/Asnn-pLfpNQ/maxresdefault.jpg" alt="">
+                        </div>
+                        <div class="col-xs-3 ml-2 ">
+                            <img class="simvols" src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSSPAALQAap5Lt9yNbUq0XtLPvOmBr0JW5dTLvb36PThiZIRhED&usqp=CAU" alt="">
+                        </div>
+                    </div>
+               </div>
+            </div>
+            <div class="col-md-6">
+                <h1 class="text-green"> Studio Ghibli</h1>
+            </div>
+            <div class="col-md-3 ">
+                <button class="btn green w-100" >
+                    <h2>Send Message</h2>
+                </button>
+                <div class="mt-3">
+                    <p class="profile_right"><span class="star"><i class="fas fa-star"></i> 5.0</span> Lorem, ipsum.</p>
+                    <p class="profile_right"> <span class="num"> 12312 </span> Lorem, ipsum</p>
+                    <p class="profile_right"> <span class="num"> 2340 </span>Lorem, ipsum</p>
+                    <p class="profile_right"><span class="num"> 234 </span>Lorem, ipsum</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- section  -->
+    <section class="offers">
+        <div class="container mb-4 mt-4">
+          <div class="row">
+            <div class="col-md-12 d-flex justify-content-center">
+              <h1 class="text-green text-bold">Store</h1>
+            </div>
+          </div>
+        </div>
+        <div class="my-coontainer">
+          <div class="row">
+            <!-- offers card item  -->
+            <div class="col-md-3">
+              <div class="card" >
+                <img class="card-img-top" src="https://cdna.artstation.com/p/assets/images/images/015/399/822/medium/philip-castillo-lol-jhin-vs-camille-awake-wallpaper-4k-2.jpg?1548184200" alt="Card image cap">
+                <div class="card-body">
+                  <div class="offers__card__profile mb-1">
+                    <a href="#"><img class="card__profile_image" src="https://i.guim.co.uk/img/media/67944850a1b5ebd6a0fba9e3528d448ebe360c60/359_0_2469_1482/master/2469.jpg?width=1200&height=1200&quality=85&auto=format&fit=crop&s=03f3e07a7f367f36a738f1ad8132b3bb" alt=""> Billie Elish</a>
+                  </div>
+                  <h6 class="card-title">Card title go to here</h6>
+                </div>
+                <div class="card-footer d-flex justify-content-between">
+                  <div class="footer_side link ">
+                    <i class="far heart fa-heart"></i>
+                    <i style="display: none;" class="fas heart fa-heart"></i>
+                    (12)
+                  </div>
+                  <div class="footer_side text-green font-weight-bold">
+                      123$
+                  </div>
+                </div>
+              </div>
+            </div>
+             <!-- offers card item  -->
+             <!-- offers card item  -->
+            <div class="col-md-3">
+              <div class="card" >
+                <img class="card-img-top" src="https://cdna.artstation.com/p/assets/images/images/015/399/822/medium/philip-castillo-lol-jhin-vs-camille-awake-wallpaper-4k-2.jpg?1548184200" alt="Card image cap">
+                <div class="card-body">
+                  <div class="offers__card__profile mb-1">
+                    <a href="#"><img class="card__profile_image" src="https://i.guim.co.uk/img/media/67944850a1b5ebd6a0fba9e3528d448ebe360c60/359_0_2469_1482/master/2469.jpg?width=1200&height=1200&quality=85&auto=format&fit=crop&s=03f3e07a7f367f36a738f1ad8132b3bb" alt=""> Billie Elish</a>
+                  </div>
+                  <h6 class="card-title">Card title go to here</h6>
+                </div>
+                <div class="card-footer d-flex justify-content-between">
+                  <div class="footer_side link ">
+                    <i class="far heart fa-heart"></i>
+                    <i style="display: none;" class="fas heart fa-heart"></i>
+                    (12)
+                  </div>
+                  <div class="footer_side text-green font-weight-bold">
+                      123$
+                  </div>
+                </div>
+              </div>
+            </div>
+             <!-- offers card item  -->
+  
+             <!-- offers card item  -->
+            <div class="col-md-3">
+              <div class="card" >
+                <img class="card-img-top" src="https://cdna.artstation.com/p/assets/images/images/015/399/822/medium/philip-castillo-lol-jhin-vs-camille-awake-wallpaper-4k-2.jpg?1548184200" alt="Card image cap">
+                <div class="card-body">
+                  <div class="offers__card__profile mb-1">
+                    <a href="#"><img class="card__profile_image" src="https://i.guim.co.uk/img/media/67944850a1b5ebd6a0fba9e3528d448ebe360c60/359_0_2469_1482/master/2469.jpg?width=1200&height=1200&quality=85&auto=format&fit=crop&s=03f3e07a7f367f36a738f1ad8132b3bb" alt=""> Billie Elish</a>
+                  </div>
+                  <h6 class="card-title">Card title go to here</h6>
+                </div>
+                <div class="card-footer d-flex justify-content-between">
+                  <div class="footer_side link ">
+                    <i class="far heart fa-heart"></i>
+                    <i style="display: none;" class="fas heart fa-heart"></i>
+                    (12)
+                  </div>
+                  <div class="footer_side text-green font-weight-bold">
+                      123$
+                  </div>
+                </div>
+              </div>
+            </div>
+             <!-- offers card item  -->
+  
+             <!-- offers card item  -->
+            <div class="col-md-3">
+              <div class="card" >
+                <img class="card-img-top" src="https://cdna.artstation.com/p/assets/images/images/015/399/822/medium/philip-castillo-lol-jhin-vs-camille-awake-wallpaper-4k-2.jpg?1548184200" alt="Card image cap">
+                <div class="card-body">
+                  <div class="offers__card__profile mb-1">
+                    <a href="#"><img class="card__profile_image" src="https://i.guim.co.uk/img/media/67944850a1b5ebd6a0fba9e3528d448ebe360c60/359_0_2469_1482/master/2469.jpg?width=1200&height=1200&quality=85&auto=format&fit=crop&s=03f3e07a7f367f36a738f1ad8132b3bb" alt=""> Billie Elish</a>
+                  </div>
+                  <h6 class="card-title">Card title go to here</h6>
+                </div>
+                <div class="card-footer d-flex justify-content-between">
+                  <div class="footer_side link ">
+                    <i class="far heart fa-heart"></i>
+                    <i style="display: none;" class="fas heart fa-heart"></i>
+                    (12)
+                  </div>
+                  <div class="footer_side text-green font-weight-bold">
+                      123$
+                  </div>
+                </div>
+              </div>
+            </div>
+             <!-- offers card item  -->
+  
+             <!-- offers card item  -->
+            <div class="col-md-3">
+              <div class="card" >
+                <img class="card-img-top" src="https://cdna.artstation.com/p/assets/images/images/015/399/822/medium/philip-castillo-lol-jhin-vs-camille-awake-wallpaper-4k-2.jpg?1548184200" alt="Card image cap">
+                <div class="card-body">
+                  <div class="offers__card__profile mb-1">
+                    <a href="#"><img class="card__profile_image" src="https://i.guim.co.uk/img/media/67944850a1b5ebd6a0fba9e3528d448ebe360c60/359_0_2469_1482/master/2469.jpg?width=1200&height=1200&quality=85&auto=format&fit=crop&s=03f3e07a7f367f36a738f1ad8132b3bb" alt=""> Billie Elish</a>
+                  </div>
+                  <h6 class="card-title">Card title go to here</h6>
+                </div>
+                <div class="card-footer d-flex justify-content-between">
+                  <div class="footer_side link ">
+                    <i class="far heart fa-heart"></i>
+                    <i style="display: none;" class="fas heart fa-heart"></i>
+                    (12)
+                  </div>
+                  <div class="footer_side text-green font-weight-bold">
+                      123$
+                  </div>
+                </div>
+              </div>
+            </div>
+             <!-- offers card item  -->
+  
+             <!-- offers card item  -->
+            <div class="col-md-3">
+              <div class="card" >
+                <img class="card-img-top" src="https://cdna.artstation.com/p/assets/images/images/015/399/822/medium/philip-castillo-lol-jhin-vs-camille-awake-wallpaper-4k-2.jpg?1548184200" alt="Card image cap">
+                <div class="card-body">
+                  <div class="offers__card__profile mb-1">
+                    <a href="#"><img class="card__profile_image" src="https://i.guim.co.uk/img/media/67944850a1b5ebd6a0fba9e3528d448ebe360c60/359_0_2469_1482/master/2469.jpg?width=1200&height=1200&quality=85&auto=format&fit=crop&s=03f3e07a7f367f36a738f1ad8132b3bb" alt=""> Billie Elish</a>
+                  </div>
+                  <h6 class="card-title">Card title go to here</h6>
+                </div>
+                <div class="card-footer d-flex justify-content-between">
+                  <div class="footer_side link ">
+                    <i class="far heart fa-heart"></i>
+                    <i style="display: none;" class="fas heart fa-heart"></i>
+                    (12)
+                  </div>
+                  <div class="footer_side text-green font-weight-bold">
+                      123$
+                  </div>
+                </div>
+              </div>
+            </div>
+             <!-- offers card item  -->
+  
+             <!-- offers card item  -->
+            <div class="col-md-3">
+              <div class="card" >
+                <img class="card-img-top" src="https://cdna.artstation.com/p/assets/images/images/015/399/822/medium/philip-castillo-lol-jhin-vs-camille-awake-wallpaper-4k-2.jpg?1548184200" alt="Card image cap">
+                <div class="card-body">
+                  <div class="offers__card__profile mb-1">
+                    <a href="#"><img class="card__profile_image" src="https://i.guim.co.uk/img/media/67944850a1b5ebd6a0fba9e3528d448ebe360c60/359_0_2469_1482/master/2469.jpg?width=1200&height=1200&quality=85&auto=format&fit=crop&s=03f3e07a7f367f36a738f1ad8132b3bb" alt=""> Billie Elish</a>
+                  </div>
+                  <h6 class="card-title">Card title go to here</h6>
+                </div>
+                <div class="card-footer d-flex justify-content-between">
+                  <div class="footer_side link ">
+                    <i class="far heart fa-heart"></i>
+                    <i style="display: none;" class="fas heart fa-heart"></i>
+                    (12)
+                  </div>
+                  <div class="footer_side text-green font-weight-bold">
+                      123$
+                  </div>
+                </div>
+              </div>
+            </div>
+             <!-- offers card item  -->
+            
+          </div>
+        </div>
+      </section>
+
+
+
+<div class="my-coontainer mt-4">
+    <div class="container text-center mt-5">
+        <h1>Studio Ghibli</h1>
+    </div>
+    <nav>
+        <div class="nav nav-tabs" id="nav-tab" role="tablist">
+          <a class="nav-item nav-link active" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab" aria-controls="nav-home" aria-selected="true">Messages (123)</a>
+          <a class="nav-item nav-link" id="nav-profile-tab" data-toggle="tab" href="#nav-profile" role="tab" aria-controls="nav-profile" aria-selected="false">Comments (21381)</a>
+        </div>
+      </nav>
+      <div class="tab-content" id="nav-tabContent">
+        <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+            <div class="comment_container">
+                <img class="comment_avatar" src="https://cdna.artstation.com/p/assets/images/images/015/399/822/medium/philip-castillo-lol-jhin-vs-camille-awake-wallpaper-4k-2.jpg?1548184200" alt="">
+                <p class="comment_text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Earum architecto adipisci quisquam omnis totam maxime dolores eius sint ipsa error!</p>
+            </div>
+
+            <div class="comment_container">
+                <img class="comment_avatar" src="https://i.guim.co.uk/img/media/67944850a1b5ebd6a0fba9e3528d448ebe360c60/359_0_2469_1482/master/2469.jpg?width=1200&height=1200&quality=85&auto=format&fit=crop&s=03f3e07a7f367f36a738f1ad8132b3bb" alt="">
+                <p class="comment_text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Earum architecto adipisci quisquam omnis totam maxime dolores eius sint ipsa error! Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint blanditiis tenetur culpa reprehenderit at perferendis dolor beatae aliquid voluptatum earum.</p>
+            </div>
+        </div>
+        <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
+
+            <div class="comment_container">
+                <img class="comment_avatar" src="https://upload.wikimedia.org/wikipedia/commons/6/65/Hayao_Miyazaki_cropped_3_Hayao_Miyazaki_201211.jpg" alt="">
+                <p class="comment_text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Earum architecto adipisci quisquam omnis totam maxime dolores eius sint ipsa error! Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint blanditiis tenetur culpa reprehenderit at perferendis dolor beatae aliquid voluptatum earum. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptate, debitis! Dolore esse unde nostrum omnis commodi vero tempore ipsum ut pariatur voluptates harum eaque quaerat voluptate impedit, eum, amet officiis? Iure doloribus temporibus ullam sapiente assumenda et, tenetur iste sunt architecto? Rerum dignissimos reiciendis optio cupiditate accusamus, modi consequuntur reprehenderit libero in, autem dolor mollitia quaerat iste commodi molestias ea quod ut accusantium. Aperiam quis fugiat voluptates tempore consectetur consequatur dignissimos, iure odit incidunt minus vel fuga temporibus quam nulla officiis sint unde mollitia a tempora molestiae laudantium animi. Minima dolorem deserunt cum optio sint, tempore veniam consectetur et explicabo?</p>
+            </div>
+
+        </div>
+      </div>
+</div>
+
+
+
+<footer class="footer green--light  ">
+    <div class="footer__top">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4">
+            <div class="info__footer d-flex justify-content-center">
+              <span class="number">31</span>
+              <span class="text">Lorem ipsum dot sit</span>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="info__footer d-flex justify-content-center">
+              <span class="number">2</span>
+              <span class="text">Lorem ipsum. dot sit</span>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="info__footer d-flex justify-content-center">
+              <span class="number">0</span>
+              <span class="text">Lorem ipsum. dot sit</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="my-coontainer mt-2 mb-2">
+      <div class="row">
+        <div class="col-md-4">
+          <h5>POSMALL.AZ market </h5>
+          <p class="text-muted"> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eos, enim.</p>
+          <p><i class="far fa-envelope"></i> gmail@postmall.az</p>
+        </div>
+        <div class="col-md-2">
+          <a class="d-block" href="#">Lorem ipsum</a>
+          <a class="d-block" href="#">Lorem imsum</a>
+          <a class="d-block" href="#">Lorem ipsum</a>
+        </div>
+        <div class="col-md-2">
+          <a class="d-block footer-btn-link" href="#">Lorem ipsum</a>
+          <a class="d-block" href="#">Lorem imsum</a>
+          <a class="d-block" href="#">Lorem ipsum</a>
+          <a class="d-block" href="#">Lorem ipsum</a>
+        </div>
+        <div class="col-md-4">
+          <h5>POSMALL.AZ</h5>
+          <p class="text-muted"><em>-Lorem ipsum dolor sit amet consectetur</em></p>
+          <p><i class="far fa-copyright"></i> 2019-2020</p>
+        </div>
+      </div>
+    </div>
+
+  </footer>
+
+
+<script src="libs/fontawesome/all.min.js"></script>
+<script src="libs/jquery/jquery.3.5.1.slim.js"></script>
+<script src="libs/bootstrap/js/popper.js"></script>
+<script src="libs/bootstrap/js/bootstrap.min.js"></script>
+<script src="js/like.js"></script>
+</body>
+</html>
