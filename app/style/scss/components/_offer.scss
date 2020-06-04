@@ -33,3 +33,12 @@
 .fa-heart {
     color:rgba($color: #d83333, $alpha: 1.0) !important
 }
+
+.col-half-offset{
+   .card{
+    border: 5px solid $green !important;
+   }
+   iframe{
+    border: 5px solid $green !important;
+   }
+}
