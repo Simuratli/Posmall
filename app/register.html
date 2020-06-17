@@ -9,38 +9,67 @@
 </head>
 <body>
 
-    <nav class="navbar shadow-sm sticky-top navbar-expand-lg  navbar-light ">
-        <div class="collapse navbar-collapse w-100 order-1 order-lg-0" id="navbarNav">
-            <ul class="navbar-nav">
-                <li class="nav-item active">
-                    <a class="nav-link" href="#">Lorem</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Lorem ipsum</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Lorem ipsum</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Lorem ipsum</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link login_register" data-toggle="modal" data-target="#loginModal">Regiser/Login</a>
-                </li>
-            </ul>
+  <nav class="navbar shadow-sm navbar-expand-lg  navbar-light ">
+    <div class="collapse navbar-collapse w-100 order-1 order-lg-0" id="navbarNav">
+        <ul class="navbar-nav">
+            <li class="nav-item active">
+                <a class="nav-link" href="#">TENDERLƏR</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">İCRAÇILAR</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">DƏSTƏK</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link login_register" data-toggle="modal" data-target="#loginModal">Regiser/Login</a>
+            </li>
+        </ul>
+    </div>
+    <div class="d-flex w-100 order-0">
+        <div class="w-100">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
         </div>
-        <div class="d-flex w-100 order-0">
-            <div class="w-100">
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
+        <a class="navbar-brand text-center w-100" href="index.html"><h2>POSMALL</h2></a>
+        <span class="w-100"></span>
+    </div>
+    <span class="w-75 p-3"></span>
+    <div class="btn  nav_user">
+      
+        <div class="dropdown nav_drop">
+            <a class="nav_drop_item" href="#"><i class="fas fa-bullhorn"></i></a>
+            <a  class="nav_drop_item" href="#"><i class="fas fa-shopping-cart"></i></a>
+            <a href="messenger.html" class="nav_drop_item" href="messenger.html"><i class="fas fa-inbox"></i></a>
+            <a class="nav_drop_item" href="#">400$</a>
+            <button class="btn  nav_drop_btn dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+             John Doe
+            </button>
+            
+            <div class="dropdown-menu nav_drop_menu " aria-labelledby="dropdownMenuButton">
+              
+                <a class="dropdown-item nav_profile" href="#">
+                    <img class ='nav_profile_avatar' src="https://www.dvdtalk.com/reviews/images/reviews/76/full/1514314448_2.jpg">
+                    <p class="nav_profile_name">
+                        John Doe
+                        <p class="nav_profile_name_status text-muted">Accountant</p>
+                    </p>
+                </a>
+                <div class="d-flex dropdown-item justify-content-between">
+                    <a class="btn w-50 btn-danger" href="profile_settings.html">Settings</a>
+                    <a  class="btn w-50  green" href="profile.html">Accout</a>
+                </div>
+                <a class="dropdown-item" href="#">Магазин</a>
+                <a class="dropdown-item" href="Discussed tenders.html">Мои тендеры</a>   
+                <a class="dropdown-item" href="opentender.html">Запущенные тендеры</a>   
+                <a class="dropdown-item" href="qapaltender.html">Обсуждаемые тендеры</a>  
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#">Logout</a> 
             </div>
-            <a class="navbar-brand text-center w-100" href="#"><h4>Lorem ipsum</h4></a>
-            <span class="w-100"></span>
-        </div>
-        <span class="w-75 p-3"></span>
-        <a class="btn btn-info login__register--btn" data-toggle="modal" data-target="#loginModal"  >Login/Register</a>
-    </nav>
+          </div>
+    </div>
+</nav>
 
  
    
