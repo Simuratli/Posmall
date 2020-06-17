@@ -3,5 +3,9 @@ html,body{
     padding: 0;
     box-sizing: border-box;
 }
-$green:#80D39B;
-$green--light:#BEFFC7;
+$green:#2296ab;
+$green--light:#7fbed0;
+
+*{
+    scroll-behavior: smooth !important;
+}
